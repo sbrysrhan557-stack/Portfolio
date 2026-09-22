@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { servicesData } from "@/Data/serviceData";
+import { servicesData } from "@/Data/ServiceData";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 function Services() {

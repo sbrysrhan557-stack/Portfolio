@@ -16,7 +16,7 @@ export const experienceData = [
   {
     id: 2,
     role: "Full Stack Web Development Trainee",
-    company: "Instant Software Solutions",
+    company: "Instant",
     duration: "Jan 2026 - Present",
     location: "Cairo, Egypt · On-site",
     description: [

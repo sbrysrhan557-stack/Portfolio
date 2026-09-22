@@ -1,7 +1,7 @@
 import { BsGithub, BsInstagram, BsWhatsapp } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 
-export const socialLinks = [
+export const SocialLinks = [
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/sabry-saleh-24ab8127a",

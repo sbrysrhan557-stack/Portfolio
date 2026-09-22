@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ProfileImg from "@/imgs/photo.png";
 import { MdDownload } from "react-icons/md";
-import { socialLinks } from "@/Data/SocialData";
+import { SocialLinks } from "@/Data/SocialData";
 
 function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -47,7 +47,7 @@ function Home() {
 
         {/* اليمين: روابط السوشيال ميديا */}
         <div className={`flex flex-col gap-3 mt-0 self-end transition-opacity duration-700 ${isLoaded ? "animate-right" : "opacity-0"}`}>
-          {socialLinks.map((social, index) => (
+          {SocialLinks.map((social, index) => (
             <a
               key={index}
               href={social.url}

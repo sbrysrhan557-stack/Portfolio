@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+  --main-color: #262626;
+  --white-color: #FFFFFF;
+  --black-color: #000000;
+  --gray-color: #c7c3c3;
+}
+
+* {
+    font-family: "Mona Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* scroll-padding-top: -30vh; */
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.7); 
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1); 
+  }
+}
+
+.animate-up {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+.animate-down {
+  animation: slideDown 0.8s ease-out forwards;
+}
+
+.animate-left {
+  animation: slideFromLeft 0.8s ease-out forwards;
+}
+
+.animate-right {
+  animation: slideFromRight 0.8s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 0.5s;
+}

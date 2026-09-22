@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import ProfileImg from "@/imgs/Photo.png";
+import ProfileImg from "@/imgs/photo.png";
 import { MdDownload } from "react-icons/md";
-import { socialLinks } from "@/Data/socialData";
+import { socialLinks } from "@/Data/SocialData";
 
 function Home() {
   const [isLoaded, setIsLoaded] = useState(false);

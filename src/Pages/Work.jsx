@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
-import { projectsData } from "@/Data/workData"; // تأكد من مطابقة مسار الملف عندك
+import { projectsData } from "@/Data/WorkData"; // تأكد من مطابقة مسار الملف عندك
 
 function Work() {
   return (

@@ -46,7 +46,7 @@ function Home() {
         </div>
 
         {/* اليمين: روابط السوشيال ميديا */}
-        <div className={`flex flex-col gap-3 mt-0 self-end transition-opacity duration-700 ${isLoaded ? "animate-right" : "opacity-0"}`}>
+        <div className={`flex flex-col gap-3 z-11 mt-0 self-end transition-opacity duration-700 ${isLoaded ? "animate-right" : "opacity-0"}`}>
           {SocialLinks.map((social, index) => (
             <a
               key={index}
